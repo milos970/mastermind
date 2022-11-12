@@ -121,3 +121,24 @@ fi
 
 done
 
+echo "~Žiadny ďalší pokus~ kód sa nenašiel!"
+echo "Hľadaný kód ${code[*]}"
+
+case $dificulty in
+
+   ľahká)
+    echo "$nick, máte vôbec na túto hru?"
+    ;;
+
+   stredná)
+    echo "$nick, stred nie je to pravé? Skúste jednoduchú obtiažnosť."
+    ;;
+
+   ťažká)
+    echo "$nick, zjavne ste sa precenili."
+    ;;
+
+esac
+exit 0
+
+
